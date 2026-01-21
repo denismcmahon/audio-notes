@@ -1,0 +1,33 @@
+# OS
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env
+.env
+.env.*.local
+
+# Node
+node_modules/
+dist/
+build/
+
+# Vite
+frontend/node_modules/
+frontend/dist/
+
+# Backend
+backend/node_modules/
+backend/dist/
+
+# Uploads and generated transcripts
+backend/uploads/
+backend/transcripts/
+
+# IDE
+.vscode/
+.idea/
