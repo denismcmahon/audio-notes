@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import { pool } from './db/pool';
+import recordingRoutes from './routes/recordingsRoutes';
 
 const app = express();
 
@@ -22,5 +23,7 @@ app.get('/health/db', async (_req, res) => {
         });
     }
 });
+
+app.use('/recordings', recordingRoutes);
 
 export default app;
