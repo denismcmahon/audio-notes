@@ -78,7 +78,7 @@ export async function postRecording(req: Request, res: Response) {
 
         // return id so you can inspect the DB row even on failure
         return res.status(500).json({
-            error: 'Transciption failed',
+            error: 'Transcription failed',
             recordingId: recording.id,
             details: msg
         });
